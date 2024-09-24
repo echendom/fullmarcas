@@ -1,0 +1,47 @@
+.content-with-image {
+  margin: 65px 0;
+  @include mq($until: large) {
+    margin: 40px 0;
+  }
+  &__container {
+    border-radius: 10px;
+    background: $skyblue_2;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding-right: 80px;
+    overflow: hidden;
+    @include mq($until: tablet) {
+      flex-direction: column-reverse;
+      row-gap: 30px;
+      padding: 30px 20px;
+      padding-bottom: 0;
+      align-items: stretch;
+    }
+  }
+  &__image-panel {
+    position: relative;
+  }
+  &__decor-lock-filled {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 35%;
+    transform: translateX(-50%) translateY(-50%) rotate(-20deg);
+    @include mq($until: tablet) {
+      transform: translateX(-75%) translateY(-30%) rotate(-20deg);
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 1;
+  }
+  &__content-panel {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+}

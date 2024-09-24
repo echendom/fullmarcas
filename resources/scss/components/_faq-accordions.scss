@@ -1,0 +1,106 @@
+.faq-accordions {
+  margin: 65px 0;
+  $component: &;
+  @include mq($until: large) {
+    margin: 40px 0;
+  }
+  &__header {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+    @include mq($until: large) {
+      margin-bottom: 30px;
+    }
+    @include mq($until: tablet) {
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    @include mq($until: large) {
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    @include mq($until: tablet) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &__accordion-item {
+    border-radius: 10px;
+    border: 1px solid $gray_4;
+    background-color: $white;
+    transition: .325s;
+    @include hover {
+      box-shadow: $button_shadow;
+    }
+  }
+  &__item-heading {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &.ui-state-active {
+      #{$component} {
+        &__cross {
+          &::after {
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+  &__item-heading-text {
+    @include p('--large');
+    margin: auto 0;
+    flex-basis: 85%;
+  }
+  &__item-content {
+    padding-top: 0;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 16px;
+    color: $gray_2;
+  }
+  &__cross {
+    position: relative;
+    width: 20px;
+    padding-top: 28px;
+    margin: auto 0;
+    &::before, &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      content: '';
+      width: 14px;
+      height: 2.5px;
+      border-radius: 5px;
+      background-color: $black;
+    }
+    &::after {
+      transform: translateX(-50%) translateY(-50%) rotate(90deg);
+      transition: .325s;
+    }
+  }
+}

@@ -1,0 +1,276 @@
+.help-center {
+  padding-top: 106px;
+  padding-bottom: 100px;
+  background-color: $skyblue_2;
+  $component: &;
+  &__container {
+    margin-top: 48px;
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__selectors {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    @include mq($until: large) {
+      gap: 0;
+    }
+  }
+  &__selector {
+    transition: .325s;
+    opacity: 1;
+    &:not(.ui-state-active) {
+      opacity: 0.5;
+      @include hover {
+        opacity: 1
+      }
+    }
+  }
+  &__selector-link {
+    @include h4;
+    color: $black;
+    display: inline-block;
+    padding: 8px 30px;
+    padding-top: 0;
+    border-bottom: 2px solid $black;
+    @include mq($until: large) {
+      font-size: 20px;
+      padding: 8px 18px;
+      padding-top: 0;
+    }
+    @include mq($until: mobileXs) {
+      padding: 8px 4px;
+    }
+  }
+  &__faq-tabs {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+    opacity: 0;
+    @include mq($until: large) {
+      flex-direction: column;
+      align-items: stretch;
+      row-gap: 20px;
+    }
+  }
+  &__faq-mobile-accordion {
+    margin-bottom: 20px;
+    @include mq($from: large) {
+      display: none;
+    }
+  }
+  &__faq-mobile-accordion-header {
+    @include p;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid $gray_3;
+    border-bottom: none;
+    background-color: $white;
+    justify-content: space-between;
+    &:not(.ui-corner-top) {
+      border-bottom: 1px solid $gray_3;
+      border-radius: 8px;
+    }
+    &.ui-corner-all {
+      border-radius: 8px;
+      border-bottom: 1px solid $gray_3;
+    }
+    &.ui-state-active {
+      #{$component} {
+        &__faq-mobile-accordion-icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &__faq-mobile-accordion-icon {
+    transition: .325s;
+  }
+  &__faq-mobile-accordion-text {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+  &__faq-mobile-accordion-options {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gray_3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    &.hidden {
+      display: none;
+    }
+  }
+  &__faq-mobile-accordion-option {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background-color: $white;
+    padding: 12px 15px;
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray_3;
+    }
+    &:last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &--active {
+      background-color: $purple_3;
+    }
+  }
+  &__faq-selectors {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 300px;
+    @include mq($until: large) {
+      display: none;
+    }
+  }
+  &__faq-selector {
+    &.ui-state-active {
+      #{$component} {
+        &__faq-selector-link {
+          background-color: $purple_3;
+        }
+      }
+    }
+  }
+  &__faq-selector-link {
+    padding: 12px 28px;
+    border-radius: 10px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: .325s;
+    @include hover {
+      box-shadow: $button_shadow;
+    }
+  }
+  &__faq-questions {
+    flex: 1;
+  }
+  &__question-title {
+    @include p('--large');
+    background-color: $white;
+    color: $gray;
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: .325s;
+    &.ui-corner-top {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    &.ui-corner-all {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      @include hover {
+        box-shadow: $button_shadow;
+      }
+    }
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+    &.ui-state-active {
+      #{$component} {
+        &__accordion-cross {
+          &::after {
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+  &__question-title-text {
+    flex-basis: 85%;
+  }
+  &__accordion-cross {
+    position: relative;
+    width: 20px;
+    padding-top: 28px;
+    margin: auto 0;
+    &::before, &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      content: '';
+      width: 14px;
+      height: 2.5px;
+      border-radius: 5px;
+      background-color: $black;
+    }
+    &::after {
+      transform: translateX(-50%) translateY(-50%) rotate(90deg);
+      transition: .325s;
+    }
+  }
+  &__question-content {
+    @include p;
+    color: $gray_2;
+    background-color: $white;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  &__tab-panel--contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 30px;
+    @include mq($until: large) {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+  }
+  &__contact-info {
+    border-radius: 10px;
+    background: $white;
+    box-shadow: $card_shadow;
+    padding: 30px;
+    padding-bottom: 50px;
+    width: 330px
+  }
+  &__info-title {
+    @include h4;
+    margin-bottom: 24px
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 12px;
+  }
+  &__link {
+    @include p;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+    color: $black;
+    transition: .325s;
+    @include hover {
+      color: $violet;
+    }
+  }
+  &__contact-form {
+    width: 850px;
+    @include mq($until: large) {
+      max-width: 100%;
+    }
+  }
+}

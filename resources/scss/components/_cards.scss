@@ -1,0 +1,88 @@
+.card {
+  $component: &;
+  &--blog {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid $gray_4;
+    background: $white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    transition: .325s;
+    @include hover {
+      box-shadow: $card_shadow;
+      #{$component} {
+        &__thumbnail {
+          transform: scale(1.1);
+        }
+      }
+    }
+    #{$component} {
+      &__thumbnail-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        height: 250px;
+        background-color: $gray_3;
+        @include mq($until: tablet) {
+          height: 180px;
+        }
+      }
+      &__thumbnail {
+        transition: .325s;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 32px;
+        @include mq($until: tablet) {
+          padding: 24px 20px;
+        }
+      }
+      &__tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+      &__tag {
+        @include p('--small');
+        background-color: var(--bg-color, #CCF);
+        border-radius: 5px;
+        padding: 2px 8px;
+        white-space: nowrap;
+      }
+      &__date {
+        @include p('--small');
+        color: $gray_2;
+        margin-bottom: 16px;
+      }
+      &__title {
+        @include h4;
+        margin-bottom: 24px;
+      }
+      &__link {
+        @include p;
+        text-decoration: underline;
+        font-weight: 600;
+        transition: .325s;
+        @include hover {
+          color: $violet;
+        }
+      }
+    }
+  }
+}

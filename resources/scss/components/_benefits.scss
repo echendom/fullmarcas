@@ -1,0 +1,123 @@
+.benefits {
+  margin: 65px 0;
+
+  @include mq($until: tablet) {
+    margin: 40px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    column-gap: 65px;
+    padding-left: 80px;
+    padding-right: 40px;
+    background-color: $skyblue_2;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    @include mq($until: large) {
+      padding: 30px 20px;
+      padding-bottom: 0;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &__content-panel {
+    flex-basis: 54%;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+    @include mq($until: large) {
+      padding: 0;
+      flex-basis: initial;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0 25px;
+    @include mq($until: large) {
+      padding: 0;
+    }
+  }
+  &__image-panel {
+    align-self: flex-end;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+    @include mq($until: large) {
+      padding-top: 0;
+      align-self: center;
+    }
+  }
+  &__image {
+    @include mq($until: large) {
+      width: 350px;
+      height: auto;
+    }
+    @include mq($until: tablet) {
+      width: 250px;
+    }
+    @include mq($until: smallTablet) {
+      width: 175px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+    padding-right: 40px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  &__checkmark {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #B8E5B8;
+  }
+  &__checkmark-icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+  }
+  &__item-heading {
+    @include h4;
+  }
+  &__item-description {
+    @include p('--small');
+    color: $gray_2;
+  }
+  &__background-lock-image {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(40%) translateY(12%) rotate(17deg);
+
+    @include mq($until: large) {
+      width: 350px;
+      height: auto;
+      transform: translateX(-30%) translateY(30%) rotate(17deg);
+      left: 50%;
+      right: initial;
+    }
+    @include mq($until: tablet) {
+      width: 250px;
+    }
+  }
+}

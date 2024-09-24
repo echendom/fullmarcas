@@ -1,0 +1,176 @@
+.step2 {
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    @include mq($until: large) {
+      margin-bottom: 20px;
+    }
+  }
+  &__prev-state {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    @include mq($until: large) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+    }
+  }
+  &__trademark-details {
+    @include p('--large');
+    color: $gray;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    @include mq($until: large) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__trademark-name {
+    font-size: 22px;
+    &--highlight {
+      background-color: #B8E5B8;
+      border-radius: 5px;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+  }
+  &__details-separator {
+    width: 1px;
+    height: 19px;
+    background-color: $gray_3;
+    @include mq($until: large) {
+      display: none;
+    }
+  }
+  &__edit-button {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: -2px;
+  }
+  &__edit-button-text {
+    @include p;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  &__content {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border-top: 1px solid $gray_3;
+    @include mq($until: large) {
+      padding-top: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__description {
+    margin-bottom: 40px;
+  }
+  &__categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+  &__categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include mq($until: large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mq($until: tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__category {
+    border: 1px solid transparent;
+  }
+  &__category, &__category--selected {
+    border-radius: 10px;
+    background: $white;
+    box-shadow: $button_shadow;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    justify-content: flex-start;
+    padding: 24px 32px;
+    transition: .325s;
+    cursor: pointer;
+  }
+  $component: &;
+  &__category--selected {
+    border: 1px solid $violet;
+    box-shadow: $input_shadow;
+    #{$component} {
+      &__input-checkmark {
+        background-color: $black;
+      }
+    }
+  }
+  &__category {
+    @include hover {
+      border: 1px solid $violet;
+      box-shadow: $input_shadow;
+    }
+  }
+  &__category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__category-icon-block {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+  }
+  &__category-input {
+    border-radius: 5px;
+    border: 1px solid $gray_3;
+    background: $white;
+    color: $gray;
+    padding: 10px 18px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  &__input-checkmark {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid $black;
+    background-color: $white;
+  }
+  &__category-input-tag {
+    // Hide browser's default checkbox html tag.
+    display: none;
+  }
+  &__category-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+  }
+  &__category-title {
+    @include h4;
+  }
+  &__category-description {
+    color: $gray_2;
+  }
+  &__categories-errors {
+    align-self: center;
+  }
+}

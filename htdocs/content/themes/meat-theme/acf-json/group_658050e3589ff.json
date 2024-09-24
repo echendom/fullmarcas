@@ -1,0 +1,193 @@
+{
+    "key": "group_658050e3589ff",
+    "title": "Emails",
+    "fields": [
+        {
+            "key": "field_658050e4ea7ac",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Los formularios se guardan en la base de datos pero también se pueden observar en la siguiente URL: https:\/\/docs.google.com\/spreadsheets\/d\/17RDTZ2AIPjkGMn1ozGfi-uREjmsxM5johxTq1yhyVjI\/edit#gid=0",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_658051b7ea7ad",
+            "label": "",
+            "name": "emails",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_658051cfea7ae",
+                    "label": "Direcciones de correos destinatarios",
+                    "name": "emails",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_658051e1ea7af",
+                            "label": "",
+                            "name": "email",
+                            "aria-label": "",
+                            "type": "email",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_658051cfea7ae"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65805204ea7b0",
+                    "label": "Con copia",
+                    "name": "emails_cc",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_65805204ea7b1",
+                            "label": "",
+                            "name": "email",
+                            "aria-label": "",
+                            "type": "email",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_65805204ea7b0"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65805215ea7b2",
+                    "label": "Con copia oculta",
+                    "name": "emails_bcc",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_65805215ea7b3",
+                            "label": "",
+                            "name": "email",
+                            "aria-label": "",
+                            "type": "email",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_65805215ea7b2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-emails-form"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704724254
+}

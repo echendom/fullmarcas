@@ -1,0 +1,108 @@
+.steps-indicator {
+  background-color: $steps_background;
+  color: $white;
+  width: 100%;
+  max-width: 735px;
+  margin-top: -40px;
+  margin-bottom: 80px;
+  padding: 40px 0;
+  border-radius: 10px;
+
+  @include mq($until: large) {
+    padding: 20px 0;
+  }
+
+  .step1 + & .steps-indicator__prev-button--hidden {
+    display: none;
+  }
+
+  .step2 + & {
+    max-width: initial;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    @include mq($until: large) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  &__step {
+    @include p('--large');
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: $white;
+  }
+  &__step-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    border: 1px solid $white;
+    line-height: normal;
+    @include mq($until: large) {
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      &--completed {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  &__dashed-line-picture {
+    flex: 1;
+  }
+  &__dashed-line {
+    @include mq($until: large) {
+      width: 40px;
+    }
+  }
+  &__step-label {
+    display: none;
+    color: $gray_4;
+    opacity: 0.75;
+    &--active {
+      opacity: 1;
+      color: $white;
+      display: block;
+    }
+    &--completed {
+      opacity: 1;
+      color: $white;
+    }
+  }
+  &__prev-button {
+    @include mq($until: large) {
+      &--desktop {
+        display: none;
+      }
+    }
+    &--mobile {
+      flex: 1;
+      justify-content: center;
+    }
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+  &__mobile-controls {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 15px;
+    padding: 0 20px;
+    @include mq($from: large) {
+      display: none;
+    }
+  }
+}

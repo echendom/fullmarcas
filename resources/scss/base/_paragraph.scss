@@ -1,0 +1,58 @@
+@mixin p($size: '--medium') {
+  font-family: 'Mukta', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $gray;
+
+  a {
+    color: $black;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  ol {
+    list-style: decimal;
+    margin-left: 20px;
+  }
+
+  p, ul, ol, h1, h2, h3, h4, h5, h6 {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  @if $size == '--large' {
+    font-size: 18px;
+    line-height: 1.55;
+  } @else if $size == '--medium' {
+    font-size: 16px;
+    line-height: 1.5;
+  } @else if($size == '--small') {
+    font-size: 14px;
+    line-height: 1.40;
+  }
+}
+
+.paragraph {
+  @include p;
+
+  &--large {
+    @include p('--large');
+  }
+  &--medium {
+    @include p('--medium');
+  }
+  &--small {
+    @include p('--small');
+  }
+}

@@ -1,0 +1,576 @@
+.step4 {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 80px;
+  align-items: flex-start;
+  padding-bottom: 80px;
+  $component: &;
+  &__title {
+    margin-bottom: 16px;
+    @include mq($until: large) {
+      font-size: 32px;
+    }
+  }
+  &__content {
+    flex: 1;
+  }
+
+  & .step4__summary-discount {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #090909;
+
+    .step4__summary-discount__content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: .625rem;
+    }
+
+    .field__error {
+      margin-top: .625rem;
+    }
+  }
+
+
+  &__overview {
+    padding: 32px 40px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 40px;
+    border-radius: 10px;
+    border: 1px solid $gray_3;
+    background: $white;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    @include mq($until: large) {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+      padding: 30px 20px;
+    }
+  }
+  &__overview-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__overview-header-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $gray_4;
+    padding-bottom: 32px;
+    @include mq($until: large) {
+      padding-bottom: 20px;
+    }
+  }
+  &__overview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq($until: large) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  &__overview-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    @include mq($until: large) {
+      align-items: center;
+    }
+  }
+  &__overview-risk-title {
+    @include h2;
+    @include mq($until: tablet) {
+      font-size: 32px
+    }
+  }
+  &__overview-risk-description {
+    @include h4;
+    color: $gray_2;
+    font-weight: 400;
+    @include mq($until: large) {
+      text-align: center;
+    }
+  }
+  &__similarities-container {
+    border-top: 1px solid $gray_4;
+    padding-top: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    @include mq($until: large) {
+      padding-top: 20px;
+      margin-top: 20px;
+      align-items: center;
+    }
+  }
+  &__similarities-heading {
+    margin-bottom: 5px;
+    @include mq($until: large) {
+      text-align: center;
+    }
+  }
+  &__overview-body {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__domain-availability {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+    @include mq($until: large) {
+      align-items: center;
+    }
+  }
+  &__domain-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mq($until: large) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+  }
+  &__domain-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 10px;
+    @include mq($until: tablet) {
+      align-items: center;
+    }
+  }
+  &__domain-name {
+    @include h4;
+    color: $gray;
+    text-align: right;
+  }
+  &__availability-status {
+    @include p('--small');
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 2px 8px;
+    align-items: center;
+    column-gap: 4px;
+    &--available {
+      background-color: #B8E5B8;
+    }
+    &--not-available {
+      background-color: #e5b8b8;
+    }
+  }
+  &__overview-disclaimer {
+    color: $gray_2;
+    @include mq($until: large) {
+      text-align: center;
+    }
+  }
+  &__overview-modal-button {
+    @include p;
+    color: $gray;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid $gray_3;
+    background: $white;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    transition: .325s;
+    white-space: nowrap;
+    @include hover {
+      box-shadow: $button_shadow;
+    }
+    @include mq($until: large) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  &__options-label {
+    @include h4;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    position: relative;
+  }
+  &__option {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+  &__option-title {
+    @include p('--large');
+    color: $gray;
+    font-weight: 600;
+    padding-left: 25px;
+    margin-bottom: 16px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50px;
+      background-color: $black;
+    }
+  }
+  &__option-content {
+    color: $gray_2;
+    p, p:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &__summary {
+    width: 330px;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: $card_shadow;
+    padding: 24px;
+    &--desktop {
+      position: sticky;
+      top: 0;
+      max-height: calc(100vh - 130px);
+      overflow: auto;
+      @include mq($until: large) {
+        display: none;
+      }
+    }
+    &--mobile {
+      width: 100%;
+      padding: 20px;
+      @include mq($from: large) {
+        display: none;
+      }
+    }
+  }
+  &__summary-title {
+    @include p;
+    color: $gray_2;
+    margin-bottom: 24px;
+    strong {
+      @include h3;
+      color: $black;
+      display: block;
+    }
+  }
+  &__summary-services {
+    display: flex;
+    flex-direction: column;
+  }
+  &__summary-service {
+    padding: 10px 0;
+    border-bottom: 1px solid $gray_4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 1px solid $black;
+      padding-bottom: 24px;
+    }
+  }
+  &__summary-service-discount-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  &__summary-service-discount-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: flex-start;
+  }
+  &__summary-service-discount-row-title, &__summary-service-discount-row-price {
+    @include p;
+    color: $gray_2;
+  }
+  &__summary-service-detail-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  &__summary-service-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__summary-service-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__summary-service-detail-title, &__summary-service-detail-price {
+    @include p;
+  }
+  &__summary-service-detail-title {
+    color: $gray_2;
+  }
+  &__summary-service-title {
+    @include p('--large');
+    color: $gray;
+    font-weight: 700;
+  }
+  &__summary-footer {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__summary-total {
+    @include h4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray;
+  }
+  &__summary-details-button {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  &__faq-section {
+    margin-top: 100px;
+    @include mq($until: large) {
+      margin-top: 40px;
+    }
+  }
+  &__faq-title {
+    margin-bottom: 10px;
+  }
+  &__faq-description {
+    color: $gray;
+    margin-bottom: 24px;
+  }
+  &__faq-item-title {
+    @include p('--large');
+    background-color: $white;
+    color: $gray;
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: .325s;
+    border: 1px solid $gray_4;
+    &.ui-corner-top {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-color: transparent;
+    }
+    &.ui-corner-all {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-color: $gray_4;
+      @include hover {
+        box-shadow: $button_shadow;
+      }
+    }
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+    &.ui-state-active {
+      #{$component} {
+        &__faq-cross {
+          &::after {
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+  &__faq-cross {
+    position: relative;
+    width: 20px;
+    padding-top: 28px;
+    margin: auto 0;
+    &::before, &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      content: '';
+      width: 14px;
+      height: 2.5px;
+      border-radius: 5px;
+      background-color: $black;
+    }
+    &::after {
+      transform: translateX(-50%) translateY(-50%) rotate(90deg);
+      transition: .325s;
+    }
+  }
+  &__faq-item-content {
+    @include p;
+    color: $gray_2;
+    background-color: $white;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid $gray_4;
+    border-top-color: transparent;
+  }
+  &__details-label {
+    @include h3;
+    color: $black;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  &__details-content {
+    color: $gray;
+  }
+  &__close-modal-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include mq($until: large) {
+      transform: translateX(105%) translateY(-95%);
+    }
+  }
+  &__selected-classes {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__selected-classes-title {
+    @include h3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.ui-state-active {
+      #{$component} {
+        &__selected-classes-title-icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &__selected-classes-title-icon {
+    transition: .325s;
+    @include mq($from: large) {
+      display: none;
+    }
+  }
+  &__selected-classes-container {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  &__selected-classes-error {
+    margin-bottom: 10px;
+  }
+  &__selected-class {
+    border: 1px solid $gray_3;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    &:not(:first-child) {
+      border-top: none;
+    }
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+  &__selected-class-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__selected-class-title {
+    @include p;
+    color: $gray;
+    font-weight: 700;
+  }
+  &__add-class-section {
+    margin-top: 40px;
+    @include mq($until: tablet) {
+      margin-top: 30px;
+    }
+  }
+  &__add-class-footer {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  &__add-class-inputs {
+    margin-bottom: 24px;
+    display: flex;
+    column-gap: 30px;
+    @include mq($until: tablet) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  &__services-section {
+    margin: 40px 0;
+  }
+  &__services-title {
+    @include h3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.ui-state-active {
+      #{$component} {
+        &__services-title-icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &__services-title-icon {
+    transition: .325s;
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+  &__services {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__service {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+  }
+  &__service-icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #B8E5B8;
+    width: 30px;
+    height: 30px;
+  }
+  &__service-title {
+    color: $gray_2;
+    flex: 1;
+  }
+}

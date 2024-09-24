@@ -1,0 +1,116 @@
+$transition_time: .325s;
+
+@mixin base-button {
+  padding: 13px 18px;
+  border-radius: 8px;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: $transition_time;
+  @include hover {
+    box-shadow: $button_shadow;
+  }
+  &[disabled] {
+    background-color: $gray_3;
+    color: $white;
+    cursor: not-allowed;
+    @include hover {
+      background-color: $gray_3;
+      color: $white;
+      box-shadow: none;
+    }
+  }
+}
+
+.button {
+  &--primary {
+    @include base-button;
+    background-color: $violet;
+
+    @include hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+  &--large {
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+  &--primary-inverted {
+    @include base-button;
+    background-color: $black;
+
+    @include hover {
+      background-color: $violet;
+      color: $white;
+    }
+  }
+  &--secondary-white {
+    @include base-button;
+    border: 1px solid $black;
+    color: $black;
+    background-color: $white;
+
+    @include hover {
+      background-color: $violet;
+      border-color: $violet;
+      color: $white;
+    }
+  }
+  &--stepper {
+    @include base-button;
+    background-color: $white;
+    border: 1px solid $white;
+    color: $black;
+    &[disabled] {
+      color: $black;
+      opacity: 0.7;
+    }
+
+    @include hover {
+      background-color: $steps_background;
+      border: 1px solid $white;
+      color: $white;
+      &[disabled] {
+        color: $black;
+        opacity: 0.7;
+      }
+    }
+  }
+  &--stepper-secondary {
+    @include base-button;
+    background-color: $steps_background;
+    border: 1px solid $white;
+    color: $white;
+    &[disabled] {
+      background-color: $steps_background;
+      color: $white;
+      opacity: 0.7;
+    }
+
+    @include hover {
+      background-color: $white;
+      color: $black;
+      &[disabled] {
+        background-color: $steps_background;
+        color: $white;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.button-add {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  &__text {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}

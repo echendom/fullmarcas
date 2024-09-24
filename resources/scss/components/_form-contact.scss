@@ -1,0 +1,25 @@
+.form-contact {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-bottom: 10px;
+    @include mq($until: large) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+    &--single-column {
+      grid-template-columns: 1fr;
+      margin-bottom: 10px;
+    }
+  }
+  &__label {
+    width: 100%;
+    &--checkbox {
+      margin-top: 24px;
+    }
+  }
+  &__submit {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,278 @@
+.step1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 80px;
+  &__image {
+    position: sticky;
+    top: 0;
+    right: 0;
+    max-width: 50%;
+    @include mq($until: large) {
+      display: none;
+    }
+  }
+  &__content {
+    width: 740px;
+    max-width: 100%;
+  }
+  &__stepper-title {
+    margin-bottom: 40px;
+    @include mq($until: large) {
+      margin-bottom: 20px;
+    }
+  }
+  &__form-container {
+    border-top: 1px solid $gray_3;
+    padding-top: 40px;
+    @include mq($until: large) {
+      padding-top: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__description {
+    margin-bottom: 40px;
+    @include mq($until: large) {
+      margin-bottom: 20px;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    .form-input-field__label {
+      width: 500px;
+      max-width: 100%;
+    }
+  }
+  &__trademark-type {
+    margin-top: 14px;
+    margin-bottom: 40px;
+  }
+  &__types-title {
+    margin-bottom: 16px;
+  }
+  &__types-description {
+    color: $gray_2;
+  }
+  &__types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    margin: 0 -15px;
+    margin-top: 24px;
+    @include mq($until: tablet) {
+      margin: 0;
+      margin-top: 24px;
+    }
+  }
+  &__type, &__type--selected {
+    flex-basis: calc(33.33% - 30px);
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+    padding: 20px;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: $button_shadow;
+    cursor: pointer;
+    transition: .325s;
+    border: 1px solid transparent;
+    @include hover {
+      border-color: $violet;
+      box-shadow: $input_shadow;
+    }
+    @include mq($until: normal) {
+      flex-basis: calc(50% - 30px);
+    }
+    @include mq($until: smallTablet) {
+      flex-basis: 100%;
+      margin: 0;
+    }
+  }
+  $component: &;
+  &__type--selected {
+    border-color: $violet;
+    box-shadow: $input_shadow;
+    #{$component} {
+      &__type-input-circle {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 10px;
+          height: 10px;
+          background-color: $black;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+  &__type-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__type-title {
+    margin-bottom: 8px;
+  }
+  &__type-description {
+    text-align: center;
+    margin-bottom: 8px;
+    color: $gray_2;
+  }
+  &__example-label {
+    margin-bottom: 8px;
+    color: $gray_2;
+  }
+  &__example-text {
+    @include h3;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  &__example-image {
+    margin-bottom: 10px;
+  }
+  &__type-input {
+    @include p('--small');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: 1px solid $gray_3;
+    background-color: $white;
+  }
+  &__type-input-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $black;
+    border-radius: 50px;
+    position: relative;
+  }
+  &__type-input-radio {
+    display: none;
+  }
+  &__image-input-container {
+    margin-top: 40px;
+  }
+  &__image-filename-input {
+    display: none;
+  }
+  &__image-errors {
+    margin-top: 6px;
+  }
+  &__image-description {
+    margin-top: 40px;
+  }
+  &__image-input-label {
+    color: $gray_2;
+    margin-bottom: 24px;
+  }
+  &__drop-area {
+    padding: 40px 0;
+    border-radius: 8px;
+    border: 1px dashed $gray_2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    cursor: pointer;
+    transition: .325s;
+    &[data-active="true"] {
+      border-color: $skyblue;
+      background-color: $skyblue_2;
+    }
+    @include mq($until: large) {
+      padding: 40px 20px;
+    }
+  }
+  &__drop-area-placeholder {
+    @include mq($until: tablet) {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  &__drop-area-label {
+    @include p('--large');
+    strong {
+      text-decoration: underline;
+    }
+    @include mq($until: large) {
+      text-align: center;
+    }
+  }
+  &__drop-area-specs {
+    @include p('--small');
+    color: $gray_2;
+  }
+  &__file-input {
+    display: none;
+  }
+  &__brand-file {
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid $gray_3;
+    background: $white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__brand-filename {
+    @include p;
+    color: $gray;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  &__brand-filesize {
+    @include p('--small');
+    color: $gray_2;
+  }
+  &__delete-file-button {
+    position: absolute;
+    right: 19px;
+    top: 15px;
+    cursor: pointer;
+  }
+  &__upload-progress {
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  &__upload-progress-background {
+    background-color: $skyblue_3;
+    border-radius: 5px;
+    flex: 1;
+    height: 8px;
+    position: relative;
+  }
+  &__upload-progress-indicator {
+    transition: 1s;
+    background-color: $skyblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px
+  }
+  &__upload-progress-value {
+    color: $gray;
+    @include p('--small');
+  }
+  &__image-input-errors {
+    margin-top: 8px;
+  }
+}

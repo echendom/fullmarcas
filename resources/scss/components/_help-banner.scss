@@ -1,0 +1,29 @@
+.help-banner {
+  margin-top: 40px;
+  padding: 32px 40px;
+  background-color: $skyblue_3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  @include mq($until: tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    row-gap: 30px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    @include mq($until: tablet) {
+      row-gap: 5px;
+    }
+  }
+  &__description {
+    color: $gray;
+  }
+}

@@ -1,0 +1,78 @@
+.blog-listing-inline {
+  padding: 65px 0;
+  position: relative;
+  @include mq($until: large) {
+    padding: 40px 0;
+  }
+  &__preloading-list {
+    display: flex;
+    gap: 30px;
+  }
+  &__title {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__items-container {
+    margin-top: 50px;
+    @include mq($until: large) {
+      margin-top: 30px;
+    }
+  }
+  &__list {
+    gap: 30px;
+    margin-bottom: 50px;
+    @include mq($until: desktop) {
+      margin-bottom: 30px;
+      width: 100vw;
+      margin-left: -20px;
+    }
+  }
+  &__link-block {
+    display: flex;
+    justify-content: center;
+  }
+  &__slide-footer {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    &--hide-desktop {
+      @include mq($from: large) {
+        display: none;
+      }
+    }
+    &--hide-tablet {
+      @include mq($from: smallTablet) {
+        display: none;
+      }
+    }
+    &--hide-mobile {
+      @include mq($until: smallTablet) {
+        display: none;
+      }
+    }
+  }
+  &__slide-controls {
+    display: flex;
+    column-gap: 10px;
+  }
+  &__progress-bar {
+    flex: 1;
+    height: 4px;
+    background-color: $gray_3;
+    display: flex;
+    border-radius: 50px;
+  }
+  &__progress-fill {
+    background-color: $violet;
+    height: 4px;
+    width: 0%;
+    border-radius: 50px;
+    transition: width 0.3s;
+  }
+  &__button-right, &__button-left {
+    padding: 10px;
+  }
+}

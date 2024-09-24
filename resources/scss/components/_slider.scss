@@ -1,0 +1,82 @@
+.spaced-slides {
+  &--stuck-to-edge {
+    .slick-list {
+      margin: 0 -15px;
+      @include mq($until: large) {
+        margin: 0 -10px;
+      }
+      .slick-slide {
+        margin: 0 15px;
+        @include mq($until: large) {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .slick-list {
+    .slick-slide {
+      margin: 0 15px;
+      @include mq($until: large) {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.equal-height-slides {
+  .slick-track {
+    display: flex !important;
+  }
+  .slick-slide {
+    height: inherit !important;
+    & > div {
+      height: 100%;
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid $white;
+    background-color: $black;
+    transition: .325s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include hover {
+      background-color: $violet;
+      box-shadow: $button_shadow;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__page-indicator {
+    @include p('--large');
+  }
+  &--hide-desktop {
+    @include mq($from: large) {
+      display: none;
+    }
+  }
+  &--hide-tablet {
+    @include mq($from: smallTablet) {
+      display: none;
+    }
+  }
+  &--hide-mobile {
+    @include mq($until: smallTablet) {
+      display: none;
+    }
+  }
+}

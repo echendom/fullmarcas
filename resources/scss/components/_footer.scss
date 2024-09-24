@@ -1,0 +1,291 @@
+.footer {
+  padding-top: 64px;
+  @include mq($until: large) {
+    padding-top: 40px;
+  }
+  $component: &;
+  &--default {
+    background-color: $black;
+  }
+  &--secondary {
+    background-color: $white;
+    box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.10);
+    padding-bottom: 170px;
+    padding-top: 50px;
+    #{$component} {
+      &__container {
+        padding: 0 32px;
+        padding-bottom: 30px;
+        justify-content: center;
+        @include mq($until: tablet) {
+          padding: 0;
+          padding-bottom: 20px;
+        }
+      }
+      &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 40px;
+        align-items: flex-start;
+        @include mq($until: normal) {
+          column-gap: 20px;
+        }
+        @include mq($until: large) {
+          flex-direction: column;
+          row-gap: 20px;
+          align-items: center;
+          margin: 0 auto;
+        }
+        @include mq($until: tablet) {
+          align-items: stretch;
+        }
+      }
+      &__link {
+        color: $gray;
+        @include hover {
+          color: $violet;
+        }
+      }
+      &__bottom {
+        padding: 0 32px;
+        border-top: none;
+        @include mq($until: large) {
+          padding: 0;
+        }
+      }
+      &__bottom-content {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 24px;
+        padding-bottom: 0;
+        border-top: 1px solid $gray_3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mq($until: large) {
+          padding-left: 0;
+          padding-right: 0;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 20px;
+        }
+      }
+      &__policy-page-link {
+        color: $black;
+        @include hover {
+          color: $violet;
+        }
+      }
+      &__copyright-text {
+        color: $gray_2;
+      }
+      &__meatcode-text {
+        color: $gray_2;
+        a {
+          color: $gray_2;
+        }
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    padding-bottom: 50px;
+    @include mq($until: large) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    @include mq($until: tablet) {
+      flex-direction: column;
+    }
+  }
+  &__logo-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+    flex: 1;
+    @include mq($from: tablet, $until: large) {
+      flex-basis: 80%;
+    }
+    @include mq($until: large) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__description {
+    color: $gray_3;
+  }
+  &__links-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+    @include mq($from: tablet, $until: large) {
+      flex-basis: calc(33.33% - 60px);
+    }
+    &--social {
+      @include mq($until: smallTablet) {
+        width: 100%;
+      }
+      #{$component} {
+        &__link-icon-mobile {
+          @include mq($from: tablet) {
+            display: none;
+          }
+        }
+        @include mq($until: tablet) {
+          &__links-heading {
+            display: none;
+          }
+          &__links {
+            flex-direction: row;
+            width: 100%;
+            column-gap: 20px;
+          }
+          &__link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: $purple_3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &__link-icon {
+            display: none;
+          }
+          &__link-text {
+            display: none;
+          }
+        }
+      }
+    }
+    &--accordion {
+      @include mq($until: tablet) {
+        width: 100%;
+      }
+      #{$component} {
+        &__links-heading {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          &.ui-state-active {
+            #{$component} {
+              &__links-accordion-icon {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__links-accordion-icon {
+    transition: .325s;
+  }
+  &__links-heading {
+    @include h4;
+    color: $purple-3;
+  }
+  &__links-accordion-icon {
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+  &__nav-links {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+      li {
+        a {
+          @include p;
+          color: $white;
+          font-weight: 600;
+          transition: .325s;
+          @include hover {
+            color: $purple-3;
+          }
+        }
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 12px;
+  }
+  &__link {
+    @include p;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+    color: $white;
+    transition: .325s;
+    @include hover {
+      color: $purple-3;
+    }
+  }
+  &__bottom {
+    padding: 40px 0;
+    border-top: 1px solid $gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include mq($until: large) {
+      flex-direction: column;
+      padding-bottom: 150px;
+      row-gap: 34px;
+    }
+  }
+  &__policies-pages {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @include mq($until: large) {
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: flex-start;
+    }
+  }
+  &__policy-page-link {
+    @include p;
+    color: $white;
+    font-weight: 600;
+    transition: .325s;
+    @include hover {
+      color: $purple-3;
+    }
+  }
+  &__copyright {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include mq($until: large) {
+      width: 100%;
+      justify-content: space-between
+    }
+  }
+  &__copyright-text {
+    @include p('--small');
+    color: $gray_3;
+  }
+  &__meatcode-text {
+    @include p('--small');
+    color: $gray_3;
+    a {
+      color: $gray_3;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,1646 @@
+{
+    "key": "group_65b99ffe00021",
+    "title": "Registro de marca",
+    "fields": [
+        {
+            "key": "field_65b99fff8626c",
+            "label": "",
+            "name": "mark_register",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_65b9a4d286275",
+                    "label": "General",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65b9a02d8626d",
+                    "label": "Título",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Registra tu marca",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a4398626e",
+                    "label": "Label paso 1",
+                    "name": "step_1_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Información",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a45e8626f",
+                    "label": "Label paso 2",
+                    "name": "step_2_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Categorías",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a46b86270",
+                    "label": "Label paso 3",
+                    "name": "step_3_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Resultados",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a47f86271",
+                    "label": "Label paso 4",
+                    "name": "step_4_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Facturación",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a49186272",
+                    "label": "Botón retroceder texto",
+                    "name": "back_button",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Ir atrás",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a4a486273",
+                    "label": "Botón continuar texto",
+                    "name": "continue_button",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Continuar",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65b9a71ed8afc",
+                    "label": "Paso 1",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65b9a727d8afd",
+                    "label": "",
+                    "name": "step_1_props",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b9a7e5d8afe",
+                            "label": "Título",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "¿Cuál es el nombre de la marca comercial que deseas inscribir?",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9a7f8d8aff",
+                            "label": "Descripción",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Ingresa la información necesaria para comenzar a registrar tu marca",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65b9a824d8b00",
+                            "label": "Labels",
+                            "name": "labels",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_65b9a82dd8b01",
+                                    "label": "Marca",
+                                    "name": "trademark_label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "¿Cómo se llama tu marca?",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9a845d8b02",
+                                    "label": "Marca placeholder",
+                                    "name": "trademark_placeholder",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "placeholder",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9a854d8b03",
+                                    "label": "Marca pista",
+                                    "name": "trademark_hint",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Puede incluir letras, números y símbolos.",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9a872d8b05",
+                                    "label": "Email",
+                                    "name": "email_label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "¿A qué correo te enviamos la información?",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9a87fd8b06",
+                                    "label": "Email placeholder",
+                                    "name": "email_placeholder",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "placeholder",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9a897d8b07",
+                                    "label": "Email pista",
+                                    "name": "email_hint",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Ejemplo: mail@mail.com",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65b9a8aed8b08",
+                            "label": "Tipo título",
+                            "name": "type_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Tipo de marca",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9a8c1d8b09",
+                            "label": "Tipo descripción",
+                            "name": "type_description",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Selecciona el tipo de marca (Selecciona 1). Adjunta imagen en el caso de marca figurativa o marca mixta.",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9a8d1d8b0a",
+                            "label": "Tipos",
+                            "name": "types",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "pagination": 0,
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65b9a960d8b0b",
+                                    "label": "Título",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                },
+                                {
+                                    "key": "field_65b9a969d8b0c",
+                                    "label": "Descripción",
+                                    "name": "description",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                },
+                                {
+                                    "key": "field_65b9a979d8b0d",
+                                    "label": "Ejemplo Texto",
+                                    "name": "example_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                },
+                                {
+                                    "key": "field_65b9a995d8b0e",
+                                    "label": "Ejemplo imagen",
+                                    "name": "example_img",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                },
+                                {
+                                    "key": "field_65b9a9c9d8b0f",
+                                    "label": "¿Requiere imagen?",
+                                    "name": "requiresImage",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "ui": 1,
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                },
+                                {
+                                    "key": "field_65f362656b117",
+                                    "label": "¿Requiere descripción de imagen?",
+                                    "name": "requiresImageDescription",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui_on_text": "Si",
+                                    "ui_off_text": "No",
+                                    "ui": 1,
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                },
+                                {
+                                    "key": "field_65f3661fd57fd",
+                                    "label": "¿Requiere denominación?",
+                                    "name": "requiresDenomination",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui_on_text": "Si",
+                                    "ui_off_text": "No",
+                                    "ui": 1,
+                                    "parent_repeater": "field_65b9a8d1d8b0a"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65b9aa0ed8b10",
+                            "label": "Label detalles archivo",
+                            "name": "file_details_label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Descripción detallada de la etiqueta",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9aa28d8b11",
+                            "label": "Título entrada archivo",
+                            "name": "file_input_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Adjunta la imagen de tu marca (JPG, PNG o PDF)",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9aa3ad8b12",
+                            "label": "Label entrada archivo",
+                            "name": "file_input_label",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p><strong>Haga clic para cargar<\/strong> o arrastre y suelte una imagen<\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65b9aa57d8b13",
+                            "label": "Label entrada archivo especificaciones",
+                            "name": "file_input_specs",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p>JPG, PNG \/ Máx. 60 MB \/ Mín. 224 x 224px<\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65b9aa88d8b14",
+                            "label": "Extensiones permitidas",
+                            "name": "allowed_extensions",
+                            "aria-label": "",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "svg": "svg",
+                                "jpg": "jpg",
+                                "jpeg": "jpeg",
+                                "png": "png"
+                            },
+                            "default_value": [],
+                            "return_format": "value",
+                            "allow_custom": 0,
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "save_custom": 0,
+                            "custom_choice_button_text": "Add new choice"
+                        },
+                        {
+                            "key": "field_65b9ab53d8b15",
+                            "label": "Máximo peso en kb",
+                            "name": "maximum_kb",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 60000,
+                            "min": "",
+                            "max": "",
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9ab71d8b16",
+                            "label": "Dimensiones mínimas",
+                            "name": "minimum_dimensions",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_65b9abe5d8b17",
+                                    "label": "Ancho",
+                                    "name": "width",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 224,
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9abf5d8b18",
+                                    "label": "Altura",
+                                    "name": "height",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 224,
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65b9ac0cd8b19",
+                            "label": "Imagen lateral",
+                            "name": "side_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Tamaño: 520x550px\r\nFormato PNG",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65b9ac9da1df4",
+                    "label": "Paso 2",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65b9acafa1df5",
+                    "label": "",
+                    "name": "step_2_props",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b9acbaa1df6",
+                            "label": "Título",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9acc2a1df7",
+                            "label": "Descripción",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65b9acd5a1df8",
+                    "label": "Paso 3",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65b9ace0a1df9",
+                    "label": "",
+                    "name": "step_3_props",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b9aceaa1dfa",
+                            "label": "título",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9acf3a1dfb",
+                            "label": "Descripción",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65b9ad05a1dfc",
+                            "label": "Imagen lateral",
+                            "name": "side_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Tamaño: 520x550px\r\nFormato PNG",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_65e6163b6ce69",
+                            "label": "Título del texto adicional",
+                            "name": "text_field_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "¡Cuéntanos más sobre tu negocio!",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e6164f6ce6a",
+                            "label": "Texto adicional (campo)",
+                            "name": "text_field_label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Esto nos ayudará a orientarte mejor en el caso que tengas dudas con las clases y categorías",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65b9aea68aa77",
+                    "label": "Paso 4",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65b9aeac8aa78",
+                    "label": "",
+                    "name": "step_4_props",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b9aeb48aa79",
+                            "label": "Título",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Factibilidad de la marca",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9aebf8aa7a",
+                            "label": "Botón opciones",
+                            "name": "options_button",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "¿Qué puedo hacer?",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9aed48aa7b",
+                            "label": "Label opciones",
+                            "name": "options_label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "¿Qué debes hacer ahora?",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9aee58aa7c",
+                            "label": "Titulo opción continuar",
+                            "name": "option_continue_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Opción 1",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9aefd8aa7d",
+                            "label": "Contenido opción continuar",
+                            "name": "option_continue_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p>\r\n          Texto descriptivo (bajo esta posibilidad no puede correr el seguro de registro).\r\n        <\/p>\r\n        <p>\r\n          Si tienes dudas consulta nuestros <a href=\"\/terminos-y-condiciones\" target=\"_blank\">términos y condiciones<\/a>\r\n        <\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65b9af358aa7e",
+                            "label": "Botón opción continuar",
+                            "name": "option_continue_button",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Continuar con registro",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9af4a8aa7f",
+                            "label": "Título opción renombrar",
+                            "name": "option_rename_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Opción 2",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9af688aa80",
+                            "label": "Contenido opción renombrar",
+                            "name": "option_rename_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_65b9af7f8aa81",
+                            "label": "Botón opción renombrar",
+                            "name": "option_rename_button",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Ingresar nueva marca",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65ba4723e8aa2",
+                            "label": "Preguntas frecuentes",
+                            "name": "faq",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_65b9af9d8aa83",
+                                    "label": "Título",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9afa68aa84",
+                                    "label": "Descripción",
+                                    "name": "description",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_65b9afb48aa85",
+                                    "label": "Items",
+                                    "name": "items",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "pagination": 0,
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Row",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_65b9afbb8aa86",
+                                            "label": "Título",
+                                            "name": "title",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_65b9afb48aa85"
+                                        },
+                                        {
+                                            "key": "field_65b9afc28aa87",
+                                            "label": "Contenido",
+                                            "name": "content",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "delay": 0,
+                                            "parent_repeater": "field_65b9afb48aa85"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65b9afd78aa88",
+                            "label": "Ayuda banner",
+                            "name": "help_banner",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_65b9afe08aa89",
+                                    "label": "Título",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_65b9afe78aa8a",
+                                    "label": "Descripción",
+                                    "name": "description",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_65b9aff38aa8b",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65b9b0058aa8d",
+                    "label": "Paso 5",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65b9b00c8aa8e",
+                    "label": "",
+                    "name": "step_5_props",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b9b01f8aa8f",
+                            "label": "Imagen lateral",
+                            "name": "side_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_65b9b02e8aa90",
+                            "label": "Título de pago",
+                            "name": "payment_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65b9b03b8aa91",
+                            "label": "Métodos de pago",
+                            "name": "payment_methods",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "pagination": 0,
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65b9b0488aa92",
+                                    "label": "Título",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65b9b03b8aa91"
+                                },
+                                {
+                                    "key": "field_65b9b0508aa93",
+                                    "label": "Llave",
+                                    "name": "key",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65b9b03b8aa91"
+                                },
+                                {
+                                    "key": "field_65b9b0628aa94",
+                                    "label": "Logo",
+                                    "name": "logo",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_65b9b03b8aa91"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-registro-de-marca"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1710450261
+}

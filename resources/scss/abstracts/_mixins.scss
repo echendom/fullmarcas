@@ -1,0 +1,9 @@
+@mixin hover {
+  @include mq($from: large) {
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        @content;
+      }
+    }
+  }
+}

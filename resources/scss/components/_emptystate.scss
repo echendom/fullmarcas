@@ -1,0 +1,16 @@
+.emptystate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 20px 0;
+  text-align: center;
+  &__heading {
+    @include h4;
+  }
+  &__description {
+    width: 620px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

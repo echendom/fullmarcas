@@ -1,0 +1,217 @@
+{
+    "key": "group_65bbd92b33e50",
+    "title": "Links para compartir",
+    "fields": [
+        {
+            "key": "field_65bbd92bbb67d",
+            "label": "",
+            "name": "share_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65bbd977bb67e",
+                    "label": "Ícono",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd980bb67f",
+                    "label": "Título",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd989bb680",
+                    "label": "Url",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd99ebb681",
+                    "label": "Target",
+                    "name": "target",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "_blank": "Blank",
+                        "_self": "Self"
+                    },
+                    "default_value": "_blank",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd9b9bb682",
+                    "label": "Color de fondo",
+                    "name": "background_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd9c8bb683",
+                    "label": "Color de borde",
+                    "name": "border_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd9d1bb684",
+                    "label": "Color del texto",
+                    "name": "text_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                },
+                {
+                    "key": "field_65bbd9e0bb685",
+                    "label": "Color del hover del texto",
+                    "name": "text_color_hover",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string",
+                    "parent_repeater": "field_65bbd92bbb67d"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-links-compartir"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1706809897
+}

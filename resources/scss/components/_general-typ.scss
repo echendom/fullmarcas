@@ -1,0 +1,142 @@
+.general-typ {
+  margin-top: 106px;
+  margin-bottom: 30px;
+  @include mq($until: large) {
+    margin-top: 61px;
+  }
+  &__container {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    @include mq($until: desktop) {
+      padding: 30px 0;
+    }
+  }
+  &__content-panel {
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__pretitle {
+    @include h4;
+    display: block;
+  }
+  &__title {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__subtitle {
+    @include h4;
+    color: $gray_2;
+    margin-bottom: 24px;
+  }
+  &__description {
+    margin-bottom: 32px;
+    color: $gray_2;
+  }
+  &__order-details {
+    padding: 24px;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: $card_shadow;
+    margin-top: 0;
+    margin-bottom: 32px;
+    width: 100%;
+    @include mq($until: desktop) {
+      padding: 20px;
+    }
+  }
+  &__order-details-title {
+    @include p;
+    color: $gray_2;
+    margin-bottom: 24px;
+    strong {
+      @include h3;
+      color: $black;
+      display: block;
+    }
+  }
+  &__summary-services {
+    display: flex;
+    flex-direction: column;
+  }
+  &__summary-service {
+    padding: 10px 0;
+    border-bottom: 1px solid $gray_4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 1px solid $black;
+      padding-bottom: 24px;
+    }
+  }
+  &__summary-service-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__summary-service-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__summary-service-detail-title, &__summary-service-detail-price {
+    @include p;
+    color: $gray_2;
+  }
+  &__summary-service-title {
+    @include p('--large');
+    color: $gray;
+    font-weight: 700;
+  }
+  &__summary-footer {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    .details-modal-button {
+      align-self: flex-end;
+    }
+  }
+  &__summary-total {
+    @include h4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    @include mq($until: desktop) {
+      flex-direction: column;
+      row-gap: 16px;
+      align-items: stretch;
+      width: 100%;
+    }
+  }
+  &__button {
+    @include mq($until: desktop) {
+      justify-content: center;
+    }
+  }
+  &__image {
+    border-radius: 10px;
+    @include mq($until: large) {
+      width: 50%;
+    }
+    @include mq($until: tablet) {
+      display: none;
+    }
+  }
+}

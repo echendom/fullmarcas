@@ -1,0 +1,216 @@
+.gradient-with-cta {
+  $component: &;
+  &--primary {
+    padding: 65px 0;
+    @include mq($until: tablet) {
+      padding: 0;
+      margin: 40px 0;
+    }
+    #{$component} {
+      &__container {
+        justify-content: flex-end;
+        display: flex;
+        column-gap: 90px;
+        padding-left: 120px;
+        @include mq($until: large) {
+          padding: 0 40px;
+        }
+        @include mq($until: tablet) {
+          padding: 0;
+          position: relative;
+        }
+      }
+      &__link {
+        @include mq($until: tablet) {
+          display: none;
+        }
+      }
+      &__link--mobile {
+        position: absolute;
+        z-index: 3;
+        bottom: 46px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        @include mq($from: tablet) {
+          display: none;
+        }
+      }
+    }
+  }
+  &--secondary {
+    padding: 0;
+    margin: 65px 0;
+    @include mq($until: large) {
+      margin: 40px 0;
+    }
+    #{$component} {
+      &__container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 5px;
+        padding-right: 80px;
+        @include mq($until: large) {
+          padding: 0;
+          flex-direction: column-reverse;
+          overflow: hidden;
+        }
+        #{$component} {
+          &__decor-background-images {
+            transform: translateX(-40%);
+          }
+          &__image-box {
+            min-width: 360px;
+            @include mq($until: large) {
+              min-width: 200px;
+              align-self: flex-end;
+            }
+          }
+          &__image {
+            height: 330px;
+            @include mq($until: large) {
+              position: relative;
+              height: auto;
+              transform: translateX(20px);
+              width: 100%;
+            }
+          }
+          &__content {
+            padding: 60px 0;
+            @include mq($until: large) {
+              padding: 30px 20px;
+            }
+          }
+          &__title {
+            @include mq($until: large) {
+              text-align: left;
+            }
+          }
+          &__description {
+            @include mq($until: large) {
+              text-align: left;
+            }
+          }
+          &__link {
+            @include mq($until: large) {
+              display: none;
+            }
+          }
+          &__link--mobile {
+            position: absolute;
+            z-index: 3;
+            bottom: 60px;
+            left: 20px;
+            @include mq($from: smallTablet) {
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            @include mq($from: large) {
+              display: none;
+            }
+            @include mq($until: mobileXs) {
+              padding: 9px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__container {
+    background: $gradient_1;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 80px;
+    position: relative;
+    @include mq($until: tablet) {
+      padding: 0;
+      flex-direction: column-reverse;
+    }
+  }
+  &__image-box {
+    position: relative;
+    align-self: flex-end;
+    min-width: 250px;
+    max-width: 40%;
+    @include mq($until: tablet) {
+      align-self: center;
+    }
+  }
+  &__decor-background-images {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  &__decor-lock-sillouette {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    min-width: 250px;
+    height: auto;
+    @include mq($until: tablet) {
+      width: 150px;
+      min-width: initial;
+    }
+  }
+  &__decor-lock-filled {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    min-width: 220px;
+    height: auto;
+    @include mq($until: tablet) {
+      min-width: 135px;
+    }
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 315px;
+    @include mq($until: tablet) {
+      position: relative;
+      width: 150px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  &__content {
+    padding: 40px 0;
+    @include mq($until: large) {
+      padding: 30px 20px;
+      padding-bottom: 15px;
+      text-align: center;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__description {
+    margin-bottom: 30px;
+    @include mq($until: tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    @include mq($until: tablet) {
+      position: absolute;
+      z-index: 3;
+      bottom: 46px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

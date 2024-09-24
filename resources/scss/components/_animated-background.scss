@@ -1,0 +1,25 @@
+.animated-background, .animated-background--secondary {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  &__stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  &__blue-lock, &__white-lock {
+    opacity: 0;
+  }
+}
+.animated-background--secondary {
+  height: 100%;
+  align-items: center;
+}

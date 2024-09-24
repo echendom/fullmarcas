@@ -1,0 +1,61 @@
+@mixin base-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  &__item {
+    &--prev {
+      margin-right: 15px;
+    }
+    &--next {
+      margin-left: 15px;
+    }
+    &--active {
+      .pagination__link {
+        border: 1px solid $black;
+        background: $white;
+        cursor: initial;
+        pointer-events: none;
+        user-select: none;
+      }
+    }
+    &--disabled {
+      .pagination__link {
+        &--prev, &--next {
+          cursor: not-allowed;
+          opacity: 0.5;
+          @include hover {
+            cursor: not-allowed;
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    @include base-link;
+    @include p('--large');
+    @include hover {
+      border: 1px solid $black;
+    }
+    padding-top: 3px;
+    &--prev, &--next {
+      @include base-link;
+      background-color: $black;
+      cursor: pointer;
+      transition: .325s;
+      @include hover {
+        background-color: $violet;
+        box-shadow: $button_shadow;
+      }
+    }
+  }
+}

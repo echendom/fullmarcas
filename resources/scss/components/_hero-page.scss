@@ -1,0 +1,107 @@
+.hero-page {
+  padding-top: 106px;
+  overflow: hidden;
+  &--use-padding {
+    padding-bottom: 65px;
+  }
+  &--use-margin {
+    margin-bottom: 65px;
+  }
+  $component: &;
+  @include mq($until: large) {
+    padding-top: 61px;
+    .animated-background__white-lock {
+      width: 210px;
+    }
+  }
+  &__title {
+    margin: 50px 0;
+    position: relative;
+    z-index: 2;
+    @include mq($until: large) {
+      margin: 36px 0;
+    }
+  }
+  &__banner {
+    &--primary, &--secondary {
+      background: $skyblue_3;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 140px;
+      column-gap: 40px;
+      position: relative;
+    }
+    &--primary {
+      @include mq($until: large) {
+        padding-right: 40px;
+      }
+      @include mq($until: large) {
+        flex-direction: column-reverse;
+        row-gap: 0;
+        padding-right: 0;
+      }
+      #{$component} {
+        &__image {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          height: 420px;
+          @include mq($until: large) {
+            position: relative;
+            height: 300px;
+            width: auto;
+          }
+        }
+      }
+    }
+    &--secondary {
+      @include mq($until: large) {
+        padding-right: 40px;
+      }
+      @include mq($until: large) {
+        flex-direction: column-reverse;
+        row-gap: 0;
+        padding-right: 0;
+      }
+      #{$component} {
+        &__image-box {
+          transform: translateY(0);
+        }
+        &__image {
+          height: 400px;
+          @include mq($until: large) {
+            position: relative;
+            height: 300px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  &__image-box {
+    position: relative;
+    align-self: flex-start;
+    min-width: 480px;
+    max-width: 40%;
+    @include mq($until: large) {
+      min-width: initial;
+      max-width: 100%;
+      transform: translateY(50px);
+    }
+  }
+  &__content {
+    padding: 75px 0;
+    position: relative;
+    z-index: 1;
+    @include mq($until: large) {
+      padding: 30px 20px;
+      padding-bottom: 0;
+    }
+  }
+  &__subheading {
+    margin-bottom: 16px;
+  }
+}

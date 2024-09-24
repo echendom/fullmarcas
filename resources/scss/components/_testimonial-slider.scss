@@ -1,0 +1,106 @@
+.testimonial-slider {
+  background-color: $skyblue_2;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  $component: &;
+  @include mq($until: large) {
+    padding: 40px 0;
+    .animated-background__blue-lock {
+      width: 75px;
+      height: auto;
+    }
+  }
+  &__header {
+    width: 800px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  &__description {
+    margin-top: 16px;
+  }
+  &__slider {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    @include mq($until: large) {
+      margin-top: 30px;
+    }
+    .slick-list{
+      padding: 0 65px !important;
+    }
+    .slick-slide {
+      opacity: 0.5;
+      transition: .325s;
+      @include hover {
+        opacity: 1;
+      }
+      &.slick-center {
+        opacity: 1;
+        #{$component} {
+          &__testimonial-item {
+            cursor: initial;
+            box-shadow: $card_shadow_small;
+          }
+        }
+      }
+    }
+  }
+  &__testimonial-container {
+    padding: 10px 0;
+  }
+  &__testimonial-item {
+    cursor: pointer;
+    padding: 35px;
+    background-color: $white;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+    transition: .325s;
+    @include hover {
+      box-shadow: $card_shadow_small;
+    }
+    @include mq($until: tablet) {
+      padding: 30px 20px;
+    }
+  }
+  &__quote {
+    color: $gray_2;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    @include mq($until: tablet) {
+      text-align: center;
+    }
+  }
+  &__testimonial-footer {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    @include mq($until: tablet) {
+      flex-direction: column;
+      row-gap: 5px;
+    }
+  }
+  &__author-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__author-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include mq($until: tablet) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

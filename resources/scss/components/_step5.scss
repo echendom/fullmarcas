@@ -1,0 +1,219 @@
+.step5 {
+  &__form-title {
+    @include h3;
+    margin-bottom: 16px;
+  }
+  &__types {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    margin-bottom: 60px;
+    @include mq($until: tablet) {
+      margin-bottom: 40px;
+    }
+  }
+  &__type, &__type--selected {
+    @include p('--small');
+    color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    cursor: pointer;
+  }
+  &__type-input-radio {
+    display: none;
+  }
+  &__type-input-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $black;
+    border-radius: 50px;
+    position: relative;
+  }
+  $component: &;
+  &__type--selected {
+    #{$component} {
+      &__type-input-circle {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 10px;
+          height: 10px;
+          background-color: $black;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+  &__row, &__row--single-column {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+    margin-bottom: 10px;
+    @include mq($until: tablet) {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+    .form-input-field {
+      flex: 1;
+      &__label {
+        flex: 1;
+        width: 100%;
+      }      
+    }
+  }
+  &__row--selects {
+    margin-top: 35px;
+    @include mq($until: tablet) {
+      row-gap: 30px;
+    }
+  }
+  &__row--single-column {
+    .form-input-field {
+      flex: 1;
+      &__label {
+        flex: 1;
+        width: calc(50% - 15px);
+        @include mq($until: tablet) {
+          width: 100%;
+        }
+      }      
+    }
+  }
+  &__add-owner {
+    margin-top: 60px;
+    @include mq($until: tablet) {
+      margin-top: 40px;
+    }
+  }
+  &__other-owners {
+    margin-bottom: 40px;
+  }
+  &__other-owners-title {
+    margin-bottom: 16px;
+  }
+  &__other-owner {
+    border: 1px solid $gray_4;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+    border-radius: 8px;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__other-owner-delete {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+  }
+  &__add-owner-button {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+  &__add-owner-text {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  &__add-owner-rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 24px;
+  }
+  &__add-owner-actions {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 20px;
+    @include mq($until: tablet) {
+      margin-top: 0;
+    }
+  }
+  &__consent {
+    margin-top: 40px;
+  }
+  &__payment-method-section {
+    margin-top: 40px;
+  }
+  &__payment-method-title {
+    margin-bottom: 16px;
+  }
+  &__payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+  }
+  &__payment-method, &__payment-method--selected {
+    padding: 32px 40px;
+    border-radius: 10px;
+    border: 1px solid $gray_3;
+    background-color: $white;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    @include mq($until: tablet) {
+      column-gap: 20px;
+    }
+  }
+  &__payment-method-input {
+    @include p('--large');
+    color: $gray;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  &__payment-method-input-text {
+    @include mq($until: tablet) {
+      display: none;
+    }
+  }
+  &__payment-method-input-radio {
+    display: none;
+  }
+  &__payment-method-input-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $black;
+    border-radius: 50px;
+    position: relative;
+  }
+  $component: &;
+  &__payment-method--selected {
+    #{$component} {
+      &__payment-method-input-circle {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 10px;
+          height: 10px;
+          background-color: $black;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+  &__total-info {
+    margin-top: 50px;
+  }
+  &__total-price {
+    font-weight: 700;
+  }
+}

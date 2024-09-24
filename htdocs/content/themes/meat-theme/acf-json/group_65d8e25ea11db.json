@@ -1,0 +1,166 @@
+{
+    "key": "group_65d8e25ea11db",
+    "title": "Info general mail",
+    "fields": [
+        {
+            "key": "field_65d8e26121aa6",
+            "label": "",
+            "name": "mail_info",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_65d8e2a421aa7",
+                    "label": "Whastapp",
+                    "name": "whastapp",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65e0c3e14d80f",
+                    "label": "Redes sociales",
+                    "name": "rrss_mail",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65e0d47735131",
+                            "label": "TikTok",
+                            "name": "tiktok",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65e0d54220856",
+                            "label": "Instagram",
+                            "name": "instagram",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65e0d48a35133",
+                            "label": "LinkedIn",
+                            "name": "linkedin",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65e0d48935132",
+                            "label": "YouTube",
+                            "name": "youtube",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_65ebaeafedc2b",
+                            "label": "Facebook",
+                            "name": "facebook",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-info-general-mail"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1709944516
+}

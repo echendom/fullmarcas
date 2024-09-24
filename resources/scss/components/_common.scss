@@ -1,0 +1,14 @@
+.common {
+  &--tag {
+    @include p('--small');
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: var(--tag-color, #B8E5B8);
+    border-radius: 5px;
+    white-space: nowrap;
+    @include mq($until: tablet) {
+      font-size: 12px;
+      padding: 5px 8px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.step-by-step {
+  margin: 65px 0;
+
+  @include mq($until: tablet) {
+    margin: 40px 0;
+  }
+
+  &__header {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: 50px;
+    @include mq($until: large) {
+      margin-bottom: 35px;
+    }
+  }
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mq($until: tablet) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+  &__step {
+    position: relative;
+    display: flex;
+    @include mq($until: tablet) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+    }
+  }
+  &__step-arrow {
+    position: relative;
+    display: block;
+  }
+  &__step-arrow-image {
+    position: relative;
+    top: 65px;
+    @include mq($until: tablet) {
+      position: static;
+      height: 64px;
+      width: auto;
+    }
+  }
+  &__step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 250px;
+    padding: 10px;
+    @include mq($until: tablet) {
+      width: 100%;
+      max-width: 400px;
+      padding: 0;
+    }
+  }
+  &__step-header {
+    position: relative;
+  }
+  &__step-index {
+    @include p('--large');
+    font-weight: 600;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background: $gradient_2;
+    transform: translateX(-50%) translateY(-40%);
+  }
+  &__icon-box {
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-color, #B8E5B8);
+    @include mq($until: large) {
+      padding: 10px;
+    }
+  }
+  &__icon {
+    @include mq($until: tablet) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  &__step-description {
+    @include h4;
+    text-align: center;
+  }
+  &__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    @include mq($until: tablet) {
+      margin-top: 30px;
+    }
+  }
+}
